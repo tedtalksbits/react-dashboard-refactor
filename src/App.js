@@ -7,7 +7,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import PageOne from './Pages/PageOne';
 import PageTwo from './Pages/PageTwo';
 
-function App({ isOpen }) {
+
+
+
+function App() {
 
   const one = themeOne;
   const two = themeTwo;
@@ -21,7 +24,6 @@ function App({ isOpen }) {
         setTheme(one);
   }
 
-
   return (
     <Router>
 
@@ -30,7 +32,7 @@ function App({ isOpen }) {
         <ThemePicker {...theme} clickFunc={handleTheme} />
         <Switch>
           <Route path='/' exact >
-            <PageOne {...isOpen} />
+            <PageOne />
           </Route>
           <Route path='/pagetwo'  >
             <PageTwo />

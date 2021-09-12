@@ -6,6 +6,7 @@ const ColorBox = styled.div`
    height: 3rem;
    width: 3rem;
    position: absolute;
+   top:0;
    right: 0;
    border-radius: 50%;
    cursor: pointer;

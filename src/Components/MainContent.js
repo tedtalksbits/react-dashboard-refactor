@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-
 const ContentWrapper = styled.div`
 
   display: grid;
@@ -16,10 +15,10 @@ const ContentWrapper = styled.div`
   }
 
 `
-const MainContent = ({ isOpen }) => {
+const MainContent = ({ toggleMargin, text }) => {
    return (
-      <ContentWrapper>
-         <h1>page</h1>
+      <ContentWrapper toggleMargin={toggleMargin}>
+         <h1>{text}</h1>
       </ContentWrapper>
    )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import MainContent from '../Components/MainContent'
+import { RandomComp } from '../Components/SideBar'
 
 const PageOne = () => {
    return (

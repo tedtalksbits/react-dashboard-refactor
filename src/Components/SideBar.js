@@ -53,57 +53,69 @@ const SideBarLink = styled(Link)`
       }
    }
 `
-const SideBar = ({ bGround, primary, secondary, accent, black, grey }) => {
+
+
+const SideBar = ({ bGround, primary, secondary, accent, black, grey, width }) => {
    let [isOpen, setIsOpen] = useState(false);
+
    const handleIsOpen = () => {
+      const mainContent = document.getElementById('main_content');
       setIsOpen(!isOpen);
       // console.log(!isOpen);
 
-      document.getElementById('main_content').classList.toggle('toggle');
+      if (isOpen !== true) {
+
+         mainContent.classList.add('open');
+      }
+      else {
+
+         mainContent.classList.remove('open');
+      }
 
    }
 
    const closeSideBar = () => {
-
-      // if (isOpen === true) {
-      //    setIsOpen(false);
-      //    document.getElementById('main_content').classList.toggle('toggle');
-      // }
-
+      if (isOpen === true) {
+         setIsOpen(false);
+         document.getElementById('main_content').classList.remove('open');
+      }
    }
 
    return (
-
-      <MainContainer bGround={secondary} open={isOpen} onClick={closeSideBar}  >
-
-
-         <InnerContainer >
-            <LinkContainer>
-
-               {link_data.map(data => (
-
-                  isOpen === true ?
-                     <SideBarLink to={data.link}>
-                        {data.title}
-                     </SideBarLink>
-
-                     :
-
-                     <SideBarLink to={data.link}>
-                        {data.icon}
-                     </SideBarLink>
-
-               ))}
-            </LinkContainer>
-         </InnerContainer>
-
-         {isOpen === true ? <ActionButton clickFunc={handleIsOpen} icon={<i class='bx bx-align-right toggler'></i>} col={secondary} /> : <ActionButton clickFunc={handleIsOpen} icon={<i class='bx bx-align-left toggler'></i>} col={secondary} />}
+      <>
+         <MainContainer bGround={secondary} open={isOpen} onClick={closeSideBar}  >
 
 
+            <InnerContainer >
+               <LinkContainer>
 
-      </MainContainer>
+                  {link_data.map(data => (
+
+                     isOpen === true ?
+                        <SideBarLink to={data.link}>
+                           {data.title}
+                        </SideBarLink>
+
+                        :
+
+                        <SideBarLink to={data.link}>
+                           {data.icon}
+                        </SideBarLink>
+
+                  ))}
+               </LinkContainer>
+            </InnerContainer>
+
+            {isOpen === true ? <ActionButton clickFunc={handleIsOpen} icon={<i class='bx bx-align-right toggler'></i>} col={secondary} /> : <ActionButton clickFunc={handleIsOpen} icon={<i class='bx bx-align-left toggler'></i>} col={secondary} />}
+
+
+
+
+         </MainContainer>
+
+      </>
+
    )
 
 }
-
 export default SideBar
