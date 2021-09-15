@@ -23,7 +23,7 @@ const LineChartOne = ({ colorTheme, colorOutline }) => {
 
       gradientStroke.addColorStop(0, colorTheme);
       gradientStroke.addColorStop(0.3, colorTheme);
-      gradientStroke.addColorStop(.8, "white");
+      gradientStroke.addColorStop(.8, "transparent");
 
 
       return {

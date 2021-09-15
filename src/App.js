@@ -6,6 +6,7 @@ import ThemePicker from './Components/ThemePicker';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import PageOne from './Pages/PageOne';
 import PageTwo from './Pages/PageTwo';
+import Pallettes from './Pages/Pallettes';
 
 
 
@@ -35,7 +36,10 @@ function App() {
             <PageOne />
           </Route>
           <Route path='/pagetwo'  >
-            <PageTwo />
+            <PageTwo {...theme} />
+          </Route>
+          <Route path='/palettes'  >
+            <Pallettes />
           </Route>
         </Switch>
       </div>

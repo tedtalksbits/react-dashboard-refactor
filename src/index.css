@@ -72,13 +72,13 @@ code {
   margin-left: 8.5rem;
   transition: all cubic-bezier(0.18, 0.89, 0.32, 1.28) 400ms;
 }
-.wrapper{
+/* .wrapper{
 display: grid;
 grid-template-columns: 1fr min(200ch, 100%) 1fr;
 }
 .wrapper > *{
 grid-column: 2;
-}
+} */
 .full-bleed {
 width:100%;
 grid-column: 1 / 4;

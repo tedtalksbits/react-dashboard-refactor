@@ -5,13 +5,15 @@ import { link_data } from '../linkData'
 import { Link } from 'react-router-dom'
 
 const MainContainer = styled.nav`
-   background: ${props => props.bGround || '#fff'};
+   /* background: ${props => props.bGround || '#212121'}; */
+   background: ${props => `linear-gradient(180deg, ${props.bGround} 0%, ${props.bGround2} 100%)`};
    transition: all cubic-bezier(0.18, 0.89, 0.32, 1.28) 400ms;
    position: absolute;
    z-index: 999;
-   width: ${({ open }) => (open ? '355px' : '5rem')};
+   width: ${({ open }) => (open ? '355px' : '4rem')};
    height: 100vh;
    margin-right: 2rem;
+   position: fixed;
       
 `
 const InnerContainer = styled.div`
@@ -28,6 +30,7 @@ const LinkContainer = styled.div`
    justify-content: space-between;
    flex-direction: column;
    height: 40%;
+   
 `
 const SideBarLink = styled(Link)`
    cursor: pointer;
@@ -38,6 +41,8 @@ const SideBarLink = styled(Link)`
    font-size: 1.5rem;
    font-weight: bold;
    color: white;
+   text-decoration: none;
+   font-weight: 400;
   
 
    :hover{
@@ -49,13 +54,20 @@ const SideBarLink = styled(Link)`
          height: 3rem;
          width: 17rem;
          z-index: -1;
-        
+         transition: all ease-in-out .3s;
+         opacity: .5;
+         
       }
+      
    }
+   & ::after{
+      background: red;
+   }
+  
 `
 
 
-const SideBar = ({ bGround, primary, secondary, accent, black, grey, width }) => {
+const SideBar = ({ bGround, primary, secondary, accent, black, grey, width, globalOpen, handleGlobalOpen, shade }) => {
    let [isOpen, setIsOpen] = useState(false);
 
    const handleIsOpen = () => {
@@ -83,7 +95,7 @@ const SideBar = ({ bGround, primary, secondary, accent, black, grey, width }) =>
 
    return (
       <>
-         <MainContainer bGround={secondary} open={isOpen} onClick={closeSideBar}  >
+         <MainContainer bGround={secondary} bGround2={shade} open={isOpen} onClick={closeSideBar}  >
 
 
             <InnerContainer >
