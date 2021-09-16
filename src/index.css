@@ -62,7 +62,7 @@ code {
   font-size: 2rem;
 }
 .main_content{
-  margin-left: 8.5rem;
+  /* margin-left: 8.5rem; */
 }
 .open{
   margin-left: 450px;
@@ -82,4 +82,7 @@ grid-column: 2;
 .full-bleed {
 width:100%;
 grid-column: 1 / 4;
+}
+#root{
+  overflow-y: auto;
 }

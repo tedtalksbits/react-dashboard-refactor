@@ -2,7 +2,6 @@ import React from 'react'
 import LineChartOne from '../Charts/LineChartOne'
 import { CardContainer, MediumCard } from '../Components/cardElements'
 import { MainContent, MainContentWrapper } from '../Components/mainContent'
-import { themeOne } from '../Data'
 
 const PageTwo = ({ secondary, main, darker }) => {
    return (

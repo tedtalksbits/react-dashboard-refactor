@@ -10,7 +10,7 @@ const MainContainer = styled.nav`
    transition: all cubic-bezier(0.18, 0.89, 0.32, 1.28) 400ms;
    position: absolute;
    z-index: 999;
-   width: ${({ open }) => (open ? '355px' : '4rem')};
+   width: ${({ open }) => (open ? '355px' : '0')};
    height: 100vh;
    margin-right: 2rem;
    position: fixed;
@@ -67,7 +67,7 @@ const SideBarLink = styled(Link)`
 `
 
 
-const SideBar = ({ bGround, primary, secondary, accent, black, grey, width, globalOpen, handleGlobalOpen, shade }) => {
+const SideBar = ({ bGround, primary, secondary, accent, black, grey, width, shade }) => {
    let [isOpen, setIsOpen] = useState(false);
 
    const handleIsOpen = () => {
@@ -92,6 +92,8 @@ const SideBar = ({ bGround, primary, secondary, accent, black, grey, width, glob
          document.getElementById('main_content').classList.remove('open');
       }
    }
+
+
 
    return (
       <>

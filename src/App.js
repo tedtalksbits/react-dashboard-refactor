@@ -13,13 +13,18 @@ import Pallettes from './Pages/Pallettes';
 
 function App() {
 
+
+
   const one = themeOne;
   const two = themeTwo;
   const three = themeThree;
 
   const [theme, setTheme] = useState(one);
 
-  const handleTheme = () => {
+  const handleTheme = (e) => {
+    //stop onclick from triggering other functions
+    e.stopPropagation();
+
     theme === one ? setTheme(two) :
       theme === two ? setTheme(three) :
         setTheme(one);
@@ -29,7 +34,9 @@ function App() {
     <Router>
 
       <div className="app" style={{ background: theme.primary, height: '100vh' }} >
+
         <SideBar {...theme} />
+
         <ThemePicker {...theme} clickFunc={handleTheme} />
         <Switch>
           <Route path='/' exact >
@@ -43,6 +50,7 @@ function App() {
           </Route>
         </Switch>
       </div>
+
     </Router>
   );
 }

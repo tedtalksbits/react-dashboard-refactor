@@ -5,7 +5,7 @@ import { paletteData } from '../pallettesData'
 
 const ColorBoxGrid = styled.div`
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
    grid-gap: 1rem;
    margin: 2rem 0;
 
