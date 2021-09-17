@@ -3,9 +3,9 @@ import { MainContent, MainContentWrapper } from '../Components/mainContent'
 
 
 
-const PageOne = () => {
+const PageOne = ({ background, lightText, textColor }) => {
    return (
-      <MainContentWrapper>
+      <MainContentWrapper background={background} color={textColor}>
 
          <MainContent id="main_content" className='main_content'>
             <h1>Page One</h1>

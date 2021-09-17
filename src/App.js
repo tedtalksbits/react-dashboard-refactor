@@ -30,28 +30,31 @@ function App() {
         setTheme(one);
   }
 
+  const body = document.querySelector("body");
+  body.style.backgroundColor = theme.background;
+
   return (
     <Router>
 
-      <div className="app" style={{ background: theme.primary, height: '100vh' }} >
+      <div className="app"  >
 
         <SideBar {...theme} />
 
         <ThemePicker {...theme} clickFunc={handleTheme} />
         <Switch>
           <Route path='/' exact >
-            <PageOne />
+            <PageOne {...theme} />
           </Route>
           <Route path='/pagetwo'  >
             <PageTwo {...theme} />
           </Route>
           <Route path='/palettes'  >
-            <Pallettes />
+            <Pallettes {...theme} />
           </Route>
         </Switch>
       </div>
 
-    </Router>
+    </Router >
   );
 }
 

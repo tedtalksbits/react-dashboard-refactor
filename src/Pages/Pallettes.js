@@ -33,9 +33,9 @@ const ColorBox = styled.div`
    
 `
 
-const Pallettes = () => {
+const Pallettes = ({ background, textColor }) => {
    return (
-      <MainContentWrapper>
+      <MainContentWrapper background={background} color={textColor}>
 
          <MainContent className="main_content wrapper" id="main_content">
             <h1>Page Three</h1>

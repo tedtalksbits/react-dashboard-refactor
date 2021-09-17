@@ -7,15 +7,15 @@ const Container = styled.div`
    height: 4rem;
    border-radius: 45%; */
    height: 90px;
-  width: 45px;
-  border-bottom-right-radius: 90px;
-  border-top-right-radius: 90px;
+   width: 45px;
+   border-bottom-right-radius: 90px;
+   border-top-right-radius: 90px;
    padding: .2rem;
    display: grid;
    place-items: center;
    color: white;
    position: absolute;
-   right: -2rem;
+   right: -45px;
    top: 10rem;
    cursor: pointer;
    
