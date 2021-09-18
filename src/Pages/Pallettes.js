@@ -21,7 +21,7 @@ const ColorBox = styled.div`
    /* width: 4rem;
    height: 4.5rem; */
    height: 200px;
-   border-radius: 18px;
+   border-radius: 5px;
    transition: all ease .4s;
    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
    margin: 1em 0;

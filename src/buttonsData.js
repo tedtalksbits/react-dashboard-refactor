@@ -1,123 +1,40 @@
 export const basic_buttons_data = [
    {
       "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
+      "rounded": false,
    },
    {
       "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
+      "rounded": false,
    },
    {
       "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
+      "rounded": false,
    },
    {
       "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
+      "rounded": false,
+   },
+
+
+]
+
+export const rounded_buttons_data = [
+   {
+      "label": "Rounded",
+      "rounded": true,
    },
    {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
+      "label": "Rounded",
+      "rounded": true,
    },
    {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
+      "label": "Rounded",
+      "rounded": true,
    },
    {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
-   },
-   {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
-   },
-   {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
-   },
-   {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
-   },
-   {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
-   },
-   {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
-   },
-   {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
-   },
-   {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
-   },
-   {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
-   },
-   {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
-   },
-   {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
-   },
-   {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
-   },
-   {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
-   },
-   {
-      "label": "Normal",
-      "background": "",
-      "textColor": "",
-      "border-radius": "6px",
+      "label": "Rounded",
+      "rounded": true,
    },
 
 ]

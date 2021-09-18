@@ -2,7 +2,7 @@ export const themeOne = {
    primary: '#e6e6e6',
    secondary: '#29c0f5',
    shade: '#24acdc',
-   accent: '#f6f8fa',
+   accent: '#0df2c9',
    black: '#494d66',
    grey: 'grey',
    background: '#eee',

@@ -17,7 +17,7 @@ export const MediumCard = styled.div`
    /* margin: 1rem; */
    /* height: 350px; */
    /* width: 450px; */
-   border-radius: 18px;
+   border-radius: 8px;
    background: ${props => props.cardBg};
    transition: all ease .4s;
    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
