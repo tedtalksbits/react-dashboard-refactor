@@ -4,8 +4,8 @@ import styled from 'styled-components'
 const OuterBox = styled.div`
    width: 10rem;
    height: 10rem;
-   background: #2b313f;
-   border-radius: 5px;
+   background: ${props => props.outerBg};
+   border-radius: 8px;
    display: grid;
    place-items: center;
 
@@ -13,28 +13,29 @@ const OuterBox = styled.div`
 const InnerBox = styled.div`
    width: 4rem;
    height: 4rem;
-   background: rgba(233,30,99,.4);
+   background: ${props => props.innerBg};
    border-radius: 1rem;
    display: grid;
    place-items: center;
-   border: 1px solid rgba(233, 30, 99,.3);
+   border: 1px solid ${props => props.innerBg};
 
 `
 const Icon = styled.div`
-   * > {
+   i {
 
-      color: blue;
+     
+      
    }
 `
-const IconBox = () => {
+const IconBox = ({ icon, innerBg, outerBg }) => {
    return (
-      <OuterBox>
-         <InnerBox>
+      <OuterBox outerBg={outerBg}>
+         <InnerBox innerBg={innerBg}>
             <Icon >
-               <i class='bx bxs-network-chart' />
+               {icon}
             </Icon>
          </InnerBox>
-      </OuterBox>
+      </OuterBox >
    )
 }
 

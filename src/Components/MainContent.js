@@ -2,21 +2,6 @@
 import styled from 'styled-components'
 
 export const MainContentWrapper = styled.div`
-   /* display: grid;
-   grid-template-columns: 1fr min(200ch, 100%) 1fr;
-   background: ${props => props.background};
-
-   @media screen and(max-width: 320px){
-      padding: 1rem .5rem;
-   }
-
-   & > *{
-   grid-column: 2;
-   }
-   .full-bleed {
-   width:100%;
-   grid-column: 1 / 4;
-   } */
 
    display: grid;
    grid-template-columns: 1fr min(200ch, 100%) 1fr;
@@ -56,6 +41,15 @@ export const MainContent = styled.div`
 
    
 
+
+`
+export const ContentHeader = styled.div`
+   background: ${prop => prop.headerBg};
+   padding: .875rem;
+   position: fixed;
+   width: 100%;
+   z-index: 0;
+   backdrop-filter: blur(5px);
 
 `
 

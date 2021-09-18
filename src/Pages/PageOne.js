@@ -1,18 +1,36 @@
 import React from 'react'
-import { MainContent, MainContentWrapper } from '../Components/mainContent'
+import { GridContainer, GridWrapper } from '../Components/gridElements'
+import IconBox from '../Components/IconBox'
+import { MainContent, MainContentWrapper, ContentHeader } from '../Components/mainContent'
+import { icons_data } from '../icondData'
 
 
 
-const PageOne = ({ background, lightText, textColor }) => {
+const PageOne = ({ background, primary, textColor, alpha, accent }) => {
    return (
-      <MainContentWrapper background={background} color={textColor}>
+      <>
+         <ContentHeader headerBg={alpha}>
 
-         <MainContent id="main_content" className='main_content'>
-            <h1>Page One</h1>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minus aliquid facilis libero incidunt quasi labore quae, ipsa perferendis et? </h2>
+            <h1>Icons</h1>
+         </ContentHeader>
+         <MainContentWrapper color={textColor}>
 
-         </MainContent>
-      </MainContentWrapper>
+            <MainContent id="main_content" className='main_content'>
+
+
+
+               <GridContainer>
+
+                  {icons_data.map(icon => (
+                     <IconBox icon={icon.icon} outerBg={primary} innerBg={alpha} accent={accent} />
+                  ))}
+               </GridContainer>
+
+
+
+            </MainContent>
+         </MainContentWrapper>
+      </>
 
    )
 }

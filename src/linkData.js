@@ -1,26 +1,26 @@
 export const link_data = [
    {
-      "title": "Home",
+      "title": "Icons",
       "icon": <i class='bx bxs-home'></i>,
       "link": "/",
    },
    {
-      "title": "Contact",
+      "title": "Charts",
       "icon": <i class='bx bxs-contact' ></i>,
       "link": "/pagetwo",
    },
    {
-      "title": "Projects",
+      "title": "Palette",
       "icon": <i class='bx bxs-network-chart' ></i>,
       "link": "/palettes",
    },
    {
-      "title": "Hire Me",
+      "title": "Tables",
       "icon": <i class='bx bx-money'></i>,
 
    },
    {
-      "title": "More",
+      "title": "Buttons",
       "icon": <i class='bx bx-dots-vertical-rounded'></i>,
 
    },

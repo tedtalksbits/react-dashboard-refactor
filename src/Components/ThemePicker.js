@@ -17,6 +17,7 @@ const ColorBox = styled.div`
    display: grid;
    place-items: center;
    position: fixed;
+   z-index: 999;
 `
 const ColorItem = styled.div`
    background: ${props => props.bg};

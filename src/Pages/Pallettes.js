@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MainContent, MainContentWrapper } from '../Components/mainContent'
+import { ContentHeader, MainContent, MainContentWrapper } from '../Components/mainContent'
 import { paletteData } from '../pallettesData'
 
 const ColorBoxGrid = styled.div`
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
    grid-gap: 1rem;
-   margin: 2rem 0;
+   margin: 5rem 0;
 
    img {
    width: 100%;
@@ -33,31 +33,36 @@ const ColorBox = styled.div`
    
 `
 
-const Pallettes = ({ background, textColor }) => {
+const Pallettes = ({ background, textColor, alpha }) => {
    return (
-      <MainContentWrapper background={background} color={textColor}>
+      <>
+         <ContentHeader headerBg={alpha}>
 
-         <MainContent className="main_content wrapper" id="main_content">
-            <h1>Page Three</h1>
+            <h1>Palettes</h1>
+         </ContentHeader>
+         <MainContentWrapper color={textColor}>
 
-
-            <ColorBoxGrid>
-               {paletteData.map(data => (
-                  <div className="me">
-                     <ColorBox bg={data.darker} />
-                     <ColorBox bg={data.dark} />
-                     <ColorBox bg={data.main} />
-                     <ColorBox bg={data.light} />
-                     <ColorBox bg={data.lighter} />
-                     <br />
-                  </div>
-               ))}
-            </ColorBoxGrid>
+            <MainContent className="main_content wrapper" id="main_content">
 
 
+               <ColorBoxGrid>
+                  {paletteData.map(data => (
+                     <div className="me">
+                        <ColorBox bg={data.darker} />
+                        <ColorBox bg={data.dark} />
+                        <ColorBox bg={data.main} />
+                        <ColorBox bg={data.light} />
+                        <ColorBox bg={data.lighter} />
+                        <br />
+                     </div>
+                  ))}
+               </ColorBoxGrid>
 
-         </MainContent>
-      </MainContentWrapper>
+
+
+            </MainContent>
+         </MainContentWrapper>
+      </>
    )
 }
 

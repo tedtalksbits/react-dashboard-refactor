@@ -9,9 +9,10 @@ export const CardContainer = styled.div`
    height: 200px;
    object-fit:cover;
    }
+   margin-top: 5rem;
 `
 export const MediumCard = styled.div`
-   border: 1px rgba(0, 0, 0, 0.1) solid;
+   /* border: 1px rgba(0, 0, 0, 0.1) solid; */
    padding: 1.2rem;
    /* margin: 1rem; */
    /* height: 350px; */
@@ -19,9 +20,9 @@ export const MediumCard = styled.div`
    border-radius: 18px;
    background: ${props => props.cardBg};
    transition: all ease .4s;
-   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
    :hover{
 
-      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+     /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
    }
 `

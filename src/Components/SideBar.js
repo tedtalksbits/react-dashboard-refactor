@@ -30,6 +30,7 @@ const LinkContainer = styled.div`
    justify-content: space-between;
    flex-direction: column;
    height: 40%;
+   transition: .4s;
    
 `
 const SideBarLink = styled(Link)`
@@ -43,25 +44,31 @@ const SideBarLink = styled(Link)`
    color: white;
    text-decoration: none;
    font-weight: 400;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+   width: 100%;
+   transition: all ease .4s;
   
 
-   :hover{
+   &.is-active{
      
-      ::after{
+      /* ::after{
          content: '';
          position: absolute;
          background: rgba(255,255,255,0.1);
+         top: 0;
+         left: 0;
          height: 3rem;
-         width: 17rem;
+         width: 10rem;
          z-index: -1;
          transition: all ease-in-out .3s;
          opacity: .5;
          
-      }
+      } */
+      border-bottom: 1px white solid;
       
-   }
-   & ::after{
-      background: red;
    }
   
 `
@@ -105,16 +112,11 @@ const SideBar = ({ bGround, primary, secondary, accent, black, grey, width, shad
 
                {link_data.map(data => (
 
-                  isOpen === true ?
-                     <SideBarLink to={data.link}>
-                        {data.title}
-                     </SideBarLink>
 
-                     :
+                  <SideBarLink to={data.link}>
+                     {data.title}{data.icon}
+                  </SideBarLink>
 
-                     <SideBarLink to={data.link}>
-                        {data.icon}
-                     </SideBarLink>
 
                ))}
             </LinkContainer>
