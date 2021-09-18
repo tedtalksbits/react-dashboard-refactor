@@ -6,7 +6,7 @@ Technologies used:
     * Styled-components
     * react-router
     * chartjs
-    * [boxicons](boxicons.com)
+    * [boxicons](https://boxicons.com/)
 
 ![Screen Shot](https://ipfs.io/ipfs/QmNVqXMrLXMuKxwfyF8YPHFJyEe4UpXBPAM1qr8THqfSgp)
 
