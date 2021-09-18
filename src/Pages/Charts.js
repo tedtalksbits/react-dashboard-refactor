@@ -4,13 +4,13 @@ import { CardContainer, MediumCard } from '../Components/cardElements'
 import IconBox from '../Components/IconBox'
 import { ContentHeader, MainContent, MainContentWrapper } from '../Components/mainContent'
 
-const PageTwo = ({ secondary, main, textColor, shade, primary, background, alpha }) => {
+const Charts = ({ secondary, main, textColor, shade, primary, background, alpha, glass }) => {
    return (
       <>
 
-         <ContentHeader headerBg={alpha}>
+         <ContentHeader headerBg={glass}>
 
-            <h1>Charts</h1>
+            <h1 style={{ color: textColor }}>Charts</h1>
          </ContentHeader>
          <MainContentWrapper color={textColor}>
             <MainContent id="main_content" className='main_content wrapper'>
@@ -31,4 +31,4 @@ const PageTwo = ({ secondary, main, textColor, shade, primary, background, alpha
    )
 }
 
-export default PageTwo
+export default Charts

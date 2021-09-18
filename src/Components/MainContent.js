@@ -49,7 +49,7 @@ export const ContentHeader = styled.div`
    position: fixed;
    width: 100%;
    z-index: 0;
-   backdrop-filter: blur(5px);
+   backdrop-filter: blur(20px);
 
 `
 

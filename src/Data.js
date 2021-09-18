@@ -8,7 +8,8 @@ export const themeOne = {
    background: '#eee',
    lightText: '#fefefe',
    alpha: '#29bef585',
-   textColor: '#494d66'
+   textColor: '#494d66',
+   glass: 'rgba(16 18 27 / 40%)',
 }
 export const themeTwo = {
    primary: '#181b21',
@@ -20,7 +21,8 @@ export const themeTwo = {
    background: '#20222e',
    lightText: '#fefefe',
    alpha: 'rgba(233,30,99,.4)',
-   textColor: '#fefefe'
+   textColor: '#fefefe',
+   glass: 'rgba(16 18 27 / 40%)',
 }
 export const themeThree = {
    primary: '#04060c',
@@ -32,5 +34,6 @@ export const themeThree = {
    background: '#070a0f',
    lightText: '#fefefe',
    alpha: '#7f00ff8f',
-   textColor: '#fefefe'
+   textColor: '#fefefe',
+   glass: 'rgba(16 18 27 / 40%)',
 }

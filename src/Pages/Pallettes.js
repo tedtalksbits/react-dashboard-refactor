@@ -33,12 +33,12 @@ const ColorBox = styled.div`
    
 `
 
-const Pallettes = ({ background, textColor, alpha }) => {
+const Pallettes = ({ background, textColor, alpha, glass }) => {
    return (
       <>
-         <ContentHeader headerBg={alpha}>
+         <ContentHeader headerBg={glass}>
 
-            <h1>Palettes</h1>
+            <h1 style={{ color: textColor }}>Palettes</h1>
          </ContentHeader>
          <MainContentWrapper color={textColor}>
 

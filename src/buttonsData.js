@@ -1,0 +1,123 @@
+export const basic_buttons_data = [
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+   {
+      "label": "Normal",
+      "background": "",
+      "textColor": "",
+      "border-radius": "6px",
+   },
+
+]

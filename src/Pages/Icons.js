@@ -1,17 +1,17 @@
 import React from 'react'
-import { GridContainer, GridWrapper } from '../Components/gridElements'
+import { GridContainer } from '../Components/gridElements'
 import IconBox from '../Components/IconBox'
 import { MainContent, MainContentWrapper, ContentHeader } from '../Components/mainContent'
 import { icons_data } from '../icondData'
 
 
 
-const PageOne = ({ background, primary, textColor, alpha, accent }) => {
+const Icons = ({ background, primary, alpha, accent, glass, textColor }) => {
    return (
       <>
-         <ContentHeader headerBg={alpha}>
+         <ContentHeader headerBg={glass}>
 
-            <h1>Icons</h1>
+            <h1 style={{ color: textColor }}>Icons</h1>
          </ContentHeader>
          <MainContentWrapper color={textColor}>
 
@@ -35,4 +35,4 @@ const PageOne = ({ background, primary, textColor, alpha, accent }) => {
    )
 }
 
-export default PageOne
+export default Icons

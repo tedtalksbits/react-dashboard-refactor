@@ -4,9 +4,13 @@ import SideBar from './Components/SideBar';
 import { themeOne, themeThree, themeTwo } from './Data';
 import ThemePicker from './Components/ThemePicker';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import PageOne from './Pages/PageOne';
-import PageTwo from './Pages/PageTwo';
+// import PageOne from './Pages/Icons';
+// import PageTwo from './Pages/Charts';
 import Pallettes from './Pages/Pallettes';
+import Buttons from './Pages/Buttons';
+import Icons from './Pages/Icons';
+import Charts from './Pages/Charts';
+import Tables from './Pages/Tables';
 
 
 
@@ -43,13 +47,19 @@ function App() {
         <ThemePicker {...theme} clickFunc={handleTheme} />
         <Switch>
           <Route path='/' exact >
-            <PageOne {...theme} />
+            <Icons {...theme} />
           </Route>
-          <Route path='/pagetwo'  >
-            <PageTwo {...theme} />
+          <Route path='/charts'  >
+            <Charts {...theme} />
           </Route>
           <Route path='/palettes'  >
             <Pallettes {...theme} />
+          </Route>
+          <Route path='/tables'  >
+            <Tables {...theme} />
+          </Route>
+          <Route path='/buttons'  >
+            <Buttons {...theme} />
           </Route>
         </Switch>
       </div>
