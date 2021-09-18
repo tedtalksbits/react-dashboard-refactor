@@ -6,4 +6,4 @@ Technologies used:
     * Styled-components
     * react-router
 
-![picture alt](https://imgur.com/a/Y1sdJ8H)
+![picture alt](https://imgur.com/t3AKhGh)
