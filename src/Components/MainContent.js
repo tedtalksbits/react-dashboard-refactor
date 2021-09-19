@@ -9,7 +9,7 @@ export const MainContentWrapper = styled.div`
    color: ${props => props.color};
    transition: .3s all;
    width: 100%;
-   padding: 1rem;
+   padding: 4rem;
 
    > * input{
       color: ${props => props.color};

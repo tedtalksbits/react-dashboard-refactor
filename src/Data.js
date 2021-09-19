@@ -9,7 +9,7 @@ export const themeOne = {
    lightText: '#fefefe',
    alpha: '#29bef585',
    textColor: '#494d66',
-   glass: 'rgba(16 18 27 / 40%)',
+   glass: 'rgb(198 199 202 / 20%)',
 }
 export const themeTwo = {
    primary: '#181b21',
@@ -22,7 +22,7 @@ export const themeTwo = {
    lightText: '#fefefe',
    alpha: 'rgba(233,30,99,.4)',
    textColor: '#fefefe',
-   glass: 'rgba(16 18 27 / 40%)',
+   glass: 'rgb(198 199 202 / 20%)',
 }
 export const themeThree = {
    primary: '#04060c',
@@ -35,5 +35,5 @@ export const themeThree = {
    lightText: '#fefefe',
    alpha: '#7f00ff8f',
    textColor: '#fefefe',
-   glass: 'rgba(16 18 27 / 40%)',
+   glass: 'rgb(198 199 202 / 20%)',
 }
