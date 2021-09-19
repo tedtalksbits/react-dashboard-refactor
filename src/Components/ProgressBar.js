@@ -8,7 +8,7 @@ const Container = styled.div`
 const Bar = styled.div`
    width: ${props => props.percentage};
    background-color: ${props => props.col};
-   box-shadow: 0px 0px 5px 0px ${props => props.col};
+   box-shadow: 0px 0px 10px 2px ${props => props.col}47;
    height: 12px;
    border-radius: 20px 0 0 20px;
    transition: ease-in-out all .3s;

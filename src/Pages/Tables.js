@@ -21,12 +21,12 @@ const Tables = ({ textColor, glass, secondary }) => {
                   <TableType dualTone={true}>Themed Table</TableType>
                   <Table dualTone={true}>
                      <THead>
-                        <TRow>
-                           <THeader tableBg={secondary} >ID</THeader>
-                           <THeader tableBg={secondary} >Favorite City</THeader>
-                           <THeader tableBg={secondary} >Country</THeader>
-                           <THeader tableBg={secondary} >Country Code</THeader>
-                           <THeader tableBg={secondary} >Visted</THeader>
+                        <TRow gradientBg={secondary}>
+                           <THeader tableBg={secondary} dualTone={true}>ID</THeader>
+                           <THeader tableBg={secondary} dualTone={true}>Favorite City</THeader>
+                           <THeader tableBg={secondary} dualTone={true}>Country</THeader>
+                           <THeader tableBg={secondary} dualTone={true}>Country Code</THeader>
+                           <THeader tableBg={secondary} dualTone={true}>Visted</THeader>
                         </TRow>
                      </THead>
                      <TBody>
