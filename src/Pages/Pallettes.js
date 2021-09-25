@@ -8,6 +8,7 @@ const ColorBoxGrid = styled.div`
    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
    grid-gap: 1rem;
    margin: 5rem 0;
+   transition: all ease .4s;
 
    img {
    width: 100%;
@@ -16,16 +17,19 @@ const ColorBoxGrid = styled.div`
    }
 `
 const ColorBox = styled.div`
- border: 1px rgba(0, 0, 0, 0.1) solid;
+   border: 1px rgba(0, 0, 0, 0.1) solid;
    background : ${props => props.bg};
-   /* width: 4rem;
-   height: 4.5rem; */
-   height: 200px;
    border-radius: 5px;
    transition: all ease .4s;
    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
    margin: 1em 0;
    cursor: pointer;
+   overflow: hidden;
+   
+
+
+
+   
    :hover{
 
       box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.24) , 0px 1px 10px 0px rgba(0,0,0,0.17) , 0px 2px 4px -1px rgba(0,0,0,0.28) ;
@@ -33,7 +37,18 @@ const ColorBox = styled.div`
    
 `
 
-const Pallettes = ({ background, textColor, alpha, glass }) => {
+const ColorSwatch = styled.div`
+   height: 100px;
+   width: 100%;
+   background : ${props => props.bg};
+`
+const ColorInfo = styled.div`
+   margin: .75rem;
+   text-align: center;
+   background: ${props => props.bg};
+`
+
+const Pallettes = ({ background, textColor, alpha, glass, primary }) => {
    return (
       <>
          <ContentHeader headerBg={glass}>
@@ -48,12 +63,27 @@ const Pallettes = ({ background, textColor, alpha, glass }) => {
                <ColorBoxGrid>
                   {paletteData.map(data => (
                      <div className="me">
-                        <ColorBox bg={data.darker} />
-                        <ColorBox bg={data.dark} />
-                        <ColorBox bg={data.main} />
-                        <ColorBox bg={data.light} />
-                        <ColorBox bg={data.lighter} />
-                        <br />
+                        <ColorBox bg={primary}>
+                           <ColorSwatch className="swatch" bg={data.darker}></ColorSwatch>
+                           <ColorInfo className="info" >{data.darker}</ColorInfo>
+                        </ColorBox>
+                        <ColorBox bg={primary}>
+                           <ColorSwatch className="swatch" bg={data.dark}></ColorSwatch>
+                           <ColorInfo className="info" >{data.dark}</ColorInfo>
+                        </ColorBox>
+                        <ColorBox bg={primary}>
+                           <ColorSwatch className="swatch" bg={data.main}></ColorSwatch>
+                           <ColorInfo className="info" >{data.main}</ColorInfo>
+                        </ColorBox>
+                        <ColorBox bg={primary}>
+                           <ColorSwatch className="swatch" bg={data.light}></ColorSwatch>
+                           <ColorInfo className="info" >{data.light}</ColorInfo>
+                        </ColorBox>
+                        <ColorBox bg={primary}>
+                           <ColorSwatch className="swatch" bg={data.lighter}></ColorSwatch>
+                           <ColorInfo className="info" >{data.lighter}</ColorInfo>
+                        </ColorBox>
+
                      </div>
                   ))}
                </ColorBoxGrid>

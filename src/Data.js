@@ -1,7 +1,7 @@
 export const themeOne = {
    primary: '#e6e6e6',
    secondary: '#29c0f5',
-   shade: '#24acdc',
+   shade: '#24dcc6',
    accent: '#0df2c9',
    black: '#494d66',
    grey: 'grey',
@@ -25,9 +25,9 @@ export const themeTwo = {
    glass: 'rgb(198 199 202 / 20%)',
 }
 export const themeThree = {
-   primary: '#04060c',
+   primary: '#b7cefa0d',
    secondary: '#7F00FF',
-   shade: '#7000e0',
+   shade: '#e000b6',
    accent: '#df39e4',
    black: '#4d4c74',
    grey: '#edf1f4',

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import useLocalStorageState from 'use-local-storage-state';
 import './App.css';
 import SideBar from './Components/SideBar';

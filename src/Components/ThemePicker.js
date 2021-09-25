@@ -10,7 +10,7 @@ const ColorBox = styled.div`
    /* position: absolute; */
    top:.375rem;
    right: .375rem;
-   border-radius: 8px;
+   border-radius: .25rem;
    cursor: pointer;
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    border: 1px #e1e3e5 solid;
