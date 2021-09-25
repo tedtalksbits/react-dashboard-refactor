@@ -7,7 +7,12 @@ export const TableContainer = styled.div`
    border-radius: ${({ dualTone }) => (dualTone ? '' : '6px')};
    padding: ${({ dualTone }) => (dualTone ? '' : '1rem')};
    margin: ${({ dualTone }) => (dualTone ? '' : '4rem 0')};
-   min-width: 600px;
+   /* min-width: 600px; */
+   overflow-x: auto;
+   scroll-snap-type: x mandatory;
+   scroll-behavior: smooth;
+   -webkit-overflow-scrolling: touch;
+   
 
 `
 export const TableType = styled.h3`
@@ -35,6 +40,8 @@ export const Table = styled.table`
    & thead {
     display: none;
    } */
+   
+   
 `
 
 export const THead = styled.thead`
