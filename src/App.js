@@ -1,11 +1,10 @@
 import { useState } from 'react';
+import useLocalStorageState from 'use-local-storage-state';
 import './App.css';
 import SideBar from './Components/SideBar';
 import { themeOne, themeThree, themeTwo } from './Data';
 import ThemePicker from './Components/ThemePicker';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-// import PageOne from './Pages/Icons';
-// import PageTwo from './Pages/Charts';
 import Pallettes from './Pages/Pallettes';
 import Buttons from './Pages/Buttons';
 import Icons from './Pages/Icons';
@@ -23,7 +22,7 @@ function App() {
   const two = themeTwo;
   const three = themeThree;
 
-  const [theme, setTheme] = useState(one);
+  const [theme, setTheme] = useLocalStorageState("theme", one);
 
   const handleTheme = (e) => {
     //stop onclick from triggering other functions
