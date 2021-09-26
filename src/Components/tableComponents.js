@@ -40,6 +40,21 @@ export const Table = styled.table`
    & thead {
     display: none;
    } */
+
+   @media (max-width: 768px) {
+      td:nth-child(3),
+      th:nth-child(3) { 
+         display: none; 
+      }
+   }
+   @media (max-width: 600px){
+      td:nth-child(4), th:nth-child(4){
+         display: none;
+      }
+   }
+   @media (max-width: 374px){
+      font-size: .7rem;
+   }
    
    
 `
