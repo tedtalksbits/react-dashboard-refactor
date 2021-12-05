@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProgressBar from '../Components/ProgressBar'
 import { ContentHeader, MainContent, MainContentWrapper } from '../Components/mainContent'
 import { Table, TableContainer, TableType, TBody, TData, THead, THeader, TRow } from '../Components/tableComponents'
 import { tables_data, tables_data_2 } from '../tableData'
 
 const Tables = ({ textColor, glass, secondary }) => {
-
+   const [percentage, setPercentage] = useState('30%')
 
    return (
       <>
@@ -64,6 +64,17 @@ const Tables = ({ textColor, glass, secondary }) => {
                               <TData><ProgressBar percentage={data.percentage} col={secondary} /></TData>
                            </TRow>
                         ))}
+                        <TRow>
+                           <TData contentEditable>99</TData>
+                           <TData>State</TData>
+                           <TData>1 / 1 / 2022</TData>
+                           <TData>True</TData>
+                           <TData >
+                              <ProgressBar percentage={percentage + "%"} col='green' />
+                              <input onChange={(e) => setPercentage(e.target.value)} type="range" value={percentage} />
+                              {percentage}
+                           </TData>
+                        </TRow>
                      </TBody>
                   </Table>
                </TableContainer>

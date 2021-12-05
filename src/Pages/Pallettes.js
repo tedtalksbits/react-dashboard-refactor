@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import ColorItem from '../Components/ColorItem'
 import { ContentHeader, MainContent, MainContentWrapper } from '../Components/mainContent'
 import { paletteData } from '../pallettesData'
 
@@ -16,39 +17,10 @@ const ColorBoxGrid = styled.div`
    object-fit:cover;
    }
 `
-const ColorBox = styled.div`
-   border: 1px rgba(0, 0, 0, 0.1) solid;
-   background : ${props => props.bg};
-   border-radius: 5px;
-   transition: all ease .4s;
-   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-   margin: 1em 0;
-   cursor: pointer;
-   overflow: hidden;
-   
 
-
-
-   
-   :hover{
-
-      box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.24) , 0px 1px 10px 0px rgba(0,0,0,0.17) , 0px 2px 4px -1px rgba(0,0,0,0.28) ;
-   }
-   
-`
-
-const ColorSwatch = styled.div`
-   height: 100px;
-   width: 100%;
-   background : ${props => props.bg};
-`
-const ColorInfo = styled.div`
-   margin: .75rem;
-   text-align: center;
-   background: ${props => props.bg};
-`
 
 const Pallettes = ({ background, textColor, alpha, glass, primary }) => {
+
    return (
       <>
          <ContentHeader headerBg={glass}>
@@ -61,29 +33,13 @@ const Pallettes = ({ background, textColor, alpha, glass, primary }) => {
 
 
                <ColorBoxGrid>
-                  {paletteData.map(data => (
-                     <div className="me">
-                        <ColorBox bg={primary}>
-                           <ColorSwatch className="swatch" bg={data.darker}></ColorSwatch>
-                           <ColorInfo className="info" >{data.darker}</ColorInfo>
-                        </ColorBox>
-                        <ColorBox bg={primary}>
-                           <ColorSwatch className="swatch" bg={data.dark}></ColorSwatch>
-                           <ColorInfo className="info" >{data.dark}</ColorInfo>
-                        </ColorBox>
-                        <ColorBox bg={primary}>
-                           <ColorSwatch className="swatch" bg={data.main}></ColorSwatch>
-                           <ColorInfo className="info" >{data.main}</ColorInfo>
-                        </ColorBox>
-                        <ColorBox bg={primary}>
-                           <ColorSwatch className="swatch" bg={data.light}></ColorSwatch>
-                           <ColorInfo className="info" >{data.light}</ColorInfo>
-                        </ColorBox>
-                        <ColorBox bg={primary}>
-                           <ColorSwatch className="swatch" bg={data.lighter}></ColorSwatch>
-                           <ColorInfo className="info" >{data.lighter}</ColorInfo>
-                        </ColorBox>
-
+                  {paletteData.map((data, index) => (
+                     <div key={index}>
+                        <ColorItem bg={primary} swatchBg={data.darker} />
+                        <ColorItem bg={primary} swatchBg={data.dark} />
+                        <ColorItem bg={primary} swatchBg={data.main} />
+                        <ColorItem bg={primary} swatchBg={data.light} />
+                        <ColorItem bg={primary} swatchBg={data.lighter} />
                      </div>
                   ))}
                </ColorBoxGrid>
