@@ -2,7 +2,7 @@ export const link_data = [
    {
       "title": "Icons",
       "icon": <i class='bx bxs-happy-heart-eyes' ></i>,
-      "link": "/react-dashboard-refactor/",
+      "link": "/react-dashboard-refactor",
    },
    {
       "title": "Charts",
