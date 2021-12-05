@@ -44,16 +44,16 @@ function App() {
 
         <ThemePicker {...theme} clickFunc={handleTheme} />
         <Switch>
-          <Route path='/' exact >
+          <Route path='/react-dashboard-refactor/' exact >
             <Icons {...theme} />
           </Route>
-          <Route path='/charts'  >
+          <Route path='/react-dashboard-refactor/charts'  >
             <Charts {...theme} />
           </Route>
-          <Route path='/palettes'  >
+          <Route path='/react-dashboard-refactor/palettes'  >
             <Pallettes {...theme} />
           </Route>
-          <Route path='/tables'  >
+          <Route path='/react-dashboard-refactor/tables'  >
             <Tables {...theme} />
           </Route>
           <Route path='/buttons'  >
