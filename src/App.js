@@ -56,7 +56,7 @@ function App() {
           <Route path='/react-dashboard-refactor/tables'  >
             <Tables {...theme} />
           </Route>
-          <Route path='/buttons'  >
+          <Route path='/react-dashboard-refactor//buttons'  >
             <Buttons {...theme} />
           </Route>
         </Switch>
